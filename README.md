@@ -10,4 +10,9 @@ Running locally, assuming npx is installed
 cd pwa-calculators
 npx http-server
 ```
-Visit http://localhost:8080
+
+Run with nginx in Docker
+```
+cd pwa-calculators
+docker run --rm -p 80:80 --name our_ws -v $PWD:/usr/share/nginx/html nginx
+```
